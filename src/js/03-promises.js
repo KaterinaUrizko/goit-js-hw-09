@@ -56,8 +56,7 @@ function onClickBtn(event) {
 };
 }
 
-// генератора промісів додайте будь ласка перевірку якщо delay < 0 або step < 0 або amount <= 0
-// https://prnt.sc/w78tFTVgY0fv то показуємо повідомлення що значення мають бути більші за 0"
+
 
 function createPromise(position, delay) {
 
@@ -78,50 +77,4 @@ function createPromise(position, delay) {
     }, delay);
   });
 };
-
-
-
-// function onSubmitForm(e) {
-
-// const step = Number(refs.step.value);
-// const amount = Number(refs.amount.value);
-//   let delay = Number(refs.delay.value);
-  
-//   e.preventDefault();
-
-//   console.log("click");
-  
-//   for (let position = 0; position < amount; position = +1)
-//   {
-//       createPromise(position, delay)
-//       .then(({ position, delay }) => {
-  
-//        Notiflix.Notify.success(`Hurra! position  ${position}`)
-//       }).catch(({ position, delay }) => {
-//         Notiflix.Notify.failure("So sad!")
-//       })
-    
-//     delay += step;
-//   }  
-  
-// };  
-  
-
-// let { delay, step, amount } = Object.fromEntries (
-//   new FormData(e.currentTarget)
-// );
-
-// amount = Number(amount);
-// step = Number(step);
-// delay = Number(delay);
-
-// amount += amount;
-// step += step;
-// delay += delay;
-
-
-// console.log (step, position, delay);
-
-
-
 
