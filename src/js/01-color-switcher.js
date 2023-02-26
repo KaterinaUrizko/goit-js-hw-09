@@ -1,4 +1,4 @@
-refs = {
+const refs = {
   startBTN: document.querySelector('[data-start]'),
   stopBTN: document.querySelector('[data-stop]'),
   backGround: document.querySelector('body'),
@@ -22,7 +22,7 @@ function onStopColor() {
   refs.startBTN.disabled = false;
 }
 
-function getRandomHexColor() {
+function getRandomHexColor() {const
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 // goit-js-hw-09/01-color-switcher.js at main · KaterinaUrizko/goit-js-hw-09
