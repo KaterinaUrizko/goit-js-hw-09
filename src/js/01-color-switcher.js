@@ -1,25 +1,23 @@
-const refs = {
-  startBTN: document.querySelector('[data-start]'),
-  stopBTN: document.querySelector('[data-stop]'),
-  backGround: document.querySelector('body'),
-};
+const startBTN = document.querySelector('[data-start]');
+const stopBTN = document.querySelector('[data-stop]');
+const backGround = document.querySelector('body');
 
-refs.startBTN.addEventListener('click', onChangeColor);
-refs.stopBTN.addEventListener('click', onStopColor);
+startBTN.addEventListener('click', onChangeColor);
+stopBTN.addEventListener('click', onStopColor);
 
 let timerInt = null;
 
 function onChangeColor() {
   timerInt = setInterval(() => {
     let color = getRandomHexColor();
-    refs.backGround.style.backgroundColor = `${color}`;
+    backGround.style.backgroundColor = `${color}`;
   }, 1000);
-  refs.startBTN.disabled = true;
+  startBTN.disabled = true;
 }
 
 function onStopColor() {
   clearInterval(timerInt);
-  refs.startBTN.disabled = false;
+  startBTN.disabled = false;
 }
 
 function getRandomHexColor() {
