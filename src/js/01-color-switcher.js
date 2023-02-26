@@ -22,7 +22,7 @@ function onStopColor() {
   refs.startBTN.disabled = false;
 }
 
-function getRandomHexColor() {const
+function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 // goit-js-hw-09/01-color-switcher.js at main · KaterinaUrizko/goit-js-hw-09
